@@ -23,4 +23,6 @@ Section:NewButton("Auto Rebirth", "Automatically Rebirths✨", function()
     game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Rebirth"):FireServer()
     end
 end)
+
+
 end

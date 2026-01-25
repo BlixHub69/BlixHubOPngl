@@ -1,0 +1,20 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Blix Hub", "Ocean")
+
+local gameid = game.PlaceId
+if (gameid == 5293755937) then
+  
+local Main = Window:NewTab("Auto Farm")
+local Section = Main:NewSection("Auto Farm")
+
+Section:NewButton("Orb Farm", "Farms Orb by Teleporting", function()
+    while wait() do
+    local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+    rootPart.CFrame = workspace.GameAssets.GlobalAssets.OrbSpawns.Orb.CFrame
+    end
+end)
+Section:NewButton("Auto Rebirth", "Automatically Rebirths", function()
+    print("Clicked")
+end)
+
+end

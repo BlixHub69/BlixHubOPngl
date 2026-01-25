@@ -18,5 +18,9 @@ Section:NewButton("Auto Speed Adder", "Automatically Adds Speed", function()
     game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("AddSpeed"):FireServer()
     end
 end)
-
+Section:NewButton("Auto Rebirth", "Automatically Rebirths✨", function()
+    while wait() do
+    game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Rebirth"):FireServer()
+    end
+end)
 end

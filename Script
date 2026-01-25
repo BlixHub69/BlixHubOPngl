@@ -23,6 +23,14 @@ Section:NewButton("Auto Rebirth", "Automatically Rebirths✨", function()
     game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Rebirth"):FireServer()
     end
 end)
-
+Section:NewButton("Best Pet", "Get Best Pet", function()
+    while wait() do
+local args = {
+      "Earth Butterfly",
+      false
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CanBuyEgg"):InvokeServer(unpack(args))
+end
+end)
 
 end

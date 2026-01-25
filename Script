@@ -13,8 +13,10 @@ Section:NewButton("Orb Farm", "Farms Orb by Teleporting", function()
     rootPart.CFrame = workspace.GameAssets.GlobalAssets.OrbSpawns.Orb.CFrame
     end
 end)
-Section:NewButton("Auto Rebirth", "Automatically Rebirths", function()
-    print("Clicked")
+Section:NewButton("Auto Speed Adder", "Automatically Adds Speed", function()
+    while wait() do
+    game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("AddSpeed"):FireServer()
+    end
 end)
 
 end

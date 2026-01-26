@@ -5,7 +5,7 @@ local Main = Window:NewTab("Blix Hub")
 local Section = Main:NewSection("Blix Hub")
 
 Section:NewButton("Speed Run Simulator", "Only works for Speed Run Simalator", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/BlixHub69/BlixHubOPngl/refs/heads/main/Script"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BlixHub69/BlixHubOPngl/refs/heads/main/SpeedRunSimulator-BlixHub.lua"))()
 end)
 
 Section:NewButton("Arsenal", "Only works for Arsenal", function()

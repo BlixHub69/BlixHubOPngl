@@ -8,7 +8,7 @@ local Main = Window:NewTab("Auto Farm")
 local Section = Main:NewSection("Auto Farm")
 
 Section:NewButton("Orb Farm", "Farms Orb by Teleporting", function()
-    while wait() do
+    while wait(0.1) do
     local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
     rootPart.CFrame = workspace.GameAssets.GlobalAssets.OrbSpawns.Orb.CFrame
     end

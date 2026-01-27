@@ -23,14 +23,49 @@ Section:NewButton("Auto Rebirth", "Automatically Rebirths✨", function()
     game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Rebirth"):FireServer()
     end
 end)
-Section:NewButton("Best Pet", "Get Best Pet", function()
-    while wait() do
+
+
+local Secondary = Window:NewTab("Pets")
+local Section = Secondary:NewSection("Pets")
+
+Section:NewButton("Silly Icecream", "nil", function()
+local args = {
+      "Silly Icecream",
+      false
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CanBuyEgg"):InvokeServer(unpack(args))
+end)
+
+Section:NewButton("Big Friendly Bumblebee", "nil", function()
+local args = {
+      "Big Friendly Bumblebee",
+      false
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CanBuyEgg"):InvokeServer(unpack(args))
+end)
+
+Section:NewButton("Summer Sheep", "nil", function()
+local args = {
+      "Summer Sheep",
+      false
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CanBuyEgg"):InvokeServer(unpack(args))
+end)
+
+Section:NewButton("Earth Butterfly", "Get Best Pet", function()
 local args = {
       "Earth Butterfly",
       false
 }
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CanBuyEgg"):InvokeServer(unpack(args))
-end
+end)
+
+Section:NewButton("VIP Pet", "Get Best Pet", function()
+local args = {
+      "Alien.exe",
+      false
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("CanBuyEgg"):InvokeServer(unpack(args))
 end)
 
 end

@@ -9,7 +9,7 @@ Section:NewButton("Speed Run Simulator", "Only works for Speed Run Simalator", f
 end)
 
 Section:NewButton("Arsenal", "Only works for Arsenal", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/VoidzyScripter/VoidHub-/main/Source%20Code"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BlixHub69/BlixHubOPngl/refs/heads/main/Arsenal-BlixHub.lua"))()
 end)
 
 Section:NewButton("Infinity Yield", "Infinity Yield", function()

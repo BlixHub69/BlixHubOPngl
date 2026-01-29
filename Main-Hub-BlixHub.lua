@@ -23,3 +23,7 @@ end)
 Section:NewButton("Infinity Yield", "Infinity Yield", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/DarkNetworks/Infinite-Yield/main/latest.lua"))()
 end)
+
+Section:NewButton("c00lkid","C00lkid Official Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cfsmi2/c00lguiv1/refs/heads/main/Main.lua", true))()
+end)
